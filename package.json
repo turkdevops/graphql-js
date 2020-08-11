@@ -45,9 +45,13 @@
     "build:npm": "node resources/build-npm.js",
     "build:deno": "node resources/build-deno.js",
     "gitpublish:npm": "bash ./resources/gitpublish.sh npm npmDist",
-    "gitpublish:deno": "bash ./resources/gitpublish.sh deno denoDist"
+    "gitpublish:deno": "bash ./resources/gitpublish.sh deno denoDist",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
-  "dependencies": {},
+  "dependencies": {
+    "snyk": "^1.372.0"
+  },
   "devDependencies": {
     "@babel/core": "7.10.4",
     "@babel/plugin-transform-flow-strip-types": "7.10.4",
@@ -65,9 +69,10 @@
     "eslint-plugin-istanbul": "0.1.2",
     "eslint-plugin-node": "11.1.0",
     "flow-bin": "0.129.0",
-    "mocha": "8.0.1",
+    "mocha": "8.1.0",
     "nyc": "15.1.0",
     "prettier": "2.0.5",
     "typescript": "3.9.6"
-  }
+  },
+  "snyk": true
 }
