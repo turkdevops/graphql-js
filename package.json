@@ -67,7 +67,7 @@
     "flow-bin": "0.142.0",
     "mocha": "8.2.0",
     "nyc": "15.1.0",
-    "prettier": "2.0.5",
+    "prettier": "2.2.1",
     "typescript": "4.1.3"
   }
 }
